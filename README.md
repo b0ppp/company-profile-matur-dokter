@@ -4,7 +4,7 @@ Repository ini berisi **kode sumber website company profile “Matur Dokter”**
 
 ## 📌 Tentang Proyek
 
-Proyek ini adalah *frontend static site* untuk menampilkan profil perusahaan yang bertema layanan kesehatan / dokter. Struktur, gaya, dan alur navigasi dibangun supaya siap dikembangkan atau di-*deploy* dengan platform hosting statis seperti Vercel, Netlify, GitHub Pages, dsb.:contentReference[oaicite:1]{index=1}
+Proyek ini adalah *frontend static site* untuk menampilkan profil perusahaan yang bertema layanan kesehatan / dokter. Struktur, gaya, dan alur navigasi dibangun supaya siap dikembangkan atau di-*deploy* dengan platform hosting statis seperti Vercel, Netlify, GitHub Pages, dsb.
 
 **Fitur utama:**
 - Struktur UI modern menggunakan Vite + TypeScript
@@ -31,7 +31,7 @@ Proyek ini menggunakan:
 ```
 ## 🚀 Cara Menjalankan Proyek
 
-**Instal dependensi:**
+**Instal dependensi dan Run di Local Host:**
    ```bash
    npm install
    npm run dev

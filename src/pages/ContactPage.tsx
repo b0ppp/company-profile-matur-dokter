@@ -240,8 +240,8 @@ export default function ContactPage() {
                       Dinas Kesehatan Kabupaten Klaten
                     </h3>
                     <p className="text-gray-600">
-                      Jl. Pemuda No. 294<br />
-                      Klaten, Jawa Tengah 57411
+                      Jl. Pemuda Nomor No.313, Mlinjon, Tonggalan,<br />
+                      Kec. Klaten Tengah, Kabupaten Klaten, Jawa Tengah 57412
                     </p>
                   </div>
                 </div>

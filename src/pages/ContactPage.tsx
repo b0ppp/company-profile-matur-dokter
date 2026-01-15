@@ -20,28 +20,28 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Telepon",
-      info: "(0272) 321234",
-      link: "tel:0272321234",
+      info: "(0272) 321053",
+      link: "tel:0272321053",
       color: "from-[#C41E3A] to-[#E85D75]"
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      info: "+62 812-3456-7890",
-      link: "https://wa.me/6281234567890",
+      info: "+62 813-3205-1369",
+      link: "https://wa.me/6281332051369",
       color: "from-green-500 to-green-600"
     },
     {
       icon: Mail,
       title: "Email",
-      info: "dinkes@klatenkab.go.id",
-      link: "mailto:dinkes@klatenkab.go.id",
+      info: "dinas.kesehatan@klaten.go.id",
+      link: "mailto:dinas.kesehatan@klaten.go.id",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: MapPin,
       title: "Alamat",
-      info: "Jl. Pemuda No. 294, Klaten, Jawa Tengah 57411",
+      info: "Jl. Pemuda Nomor No.313, Klaten, Jawa Tengah 57412",
       link: null,
       color: "from-purple-500 to-purple-600"
     }
@@ -215,12 +215,12 @@ export default function ContactPage() {
                     <h3 className="text-2xl font-bold mb-4">Jam Operasional</h3>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center pb-3 border-b border-white/10">
-                        <span className="text-white/80">Senin - Jumat:</span>
-                        <span className="font-bold">08.00 - 16.00 WIB</span>
+                        <span className="text-white/80">Senin - Kamis:</span>
+                        <span className="font-bold">08.00 - 14.00 WIB</span>
                       </div>
                       <div className="flex justify-between items-center pb-3 border-b border-white/10">
-                        <span className="text-white/80">Sabtu:</span>
-                        <span className="font-bold">08.00 - 12.00 WIB</span>
+                        <span className="text-white/80">Jumat:</span>
+                        <span className="font-bold">08.00 - 11.00 WIB</span>
                       </div>
                       <div className="flex justify-between items-center pt-3">
                         <span className="text-white/80">Layanan Darurat:</span>

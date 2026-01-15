@@ -68,19 +68,19 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-[#E85D75] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">(0272) 321234</span>
+                <span className="text-gray-400">(0272) 321053</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-[#E85D75] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">dinkes@klatenkab.go.id</span>
+                <span className="text-gray-400">dinas.kesehatan@klaten.go.id</span>
               </li>
               <li className="flex items-start space-x-3">
                 <MessageCircle className="w-5 h-5 text-[#E85D75] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">+62 812-3456-7890</span>
+                <span className="text-gray-400">+62 813-3205-1369</span>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-[#E85D75] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">Jl. Pemuda No. 294, Klaten, Jawa Tengah 57411</span>
+                <span className="text-gray-400">Jl. Pemuda Nomor No.313, Mlinjon, Tonggalan, Kec. Klaten Tengah, Kabupaten Klaten, Jawa Tengah 57412</span>
               </li>
             </ul>
           </div>

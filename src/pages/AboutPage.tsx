@@ -1,4 +1,4 @@
-import { Building2, Target, Eye, CheckCircle2, Award, Heart, Shield, Users, TrendingUp, Smartphone, Download } from 'lucide-react';
+import { Building2, Target, Eye, CheckCircle2, Award, Heart, Shield, Users, TrendingUp, Smartphone, Download, Home, Pill, Building, UsersRound, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PhoneMockup } from '../components/PhoneMockup';
 
@@ -193,7 +193,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#C41E3A] hover:shadow-xl transition-all text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-[#C41E3A] to-[#E85D75] rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-10 h-10 text-white" />
+                <User className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Kepala Dinas</h3>
               <p className="text-gray-600">
@@ -202,10 +202,20 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#C41E3A] hover:shadow-xl transition-all text-center">
+              <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Sekretaris Dinas</h3>
+              <p className="text-gray-600">
+                Mengoordinasikan administrasi, perencanaan, dan dukungan operasional dinas
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#C41E3A] hover:shadow-xl transition-all text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Building2 className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Bidang Pelayanan</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Bidang Pelayanan Kesehatan</h3>
               <p className="text-gray-600">
                 Mengelola dan mengawasi kualitas pelayanan kesehatan
               </p>
@@ -213,13 +223,35 @@ export default function AboutPage() {
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#C41E3A] hover:shadow-xl transition-all text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="w-10 h-10 text-white" />
+                <Pill className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Bidang Pencegahan</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Bidang Sumber Daya Kesehatan</h3>
               <p className="text-gray-600">
-                Fokus pada program preventif dan promosi kesehatan
+                Mengelola tenaga kesehatan, fasilitas, dan perizinan kesehatan
               </p>
             </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#C41E3A] hover:shadow-xl transition-all text-center">
+              <div className="w-20 h-20 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Building className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Bidang Pencegahan dan Pengendalian Penyakit</h3>
+              <p className="text-gray-600">
+                Menangani pencegahan dan pengendalian penyakit
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#C41E3A] hover:shadow-xl transition-all text-center">
+              <div className="w-20 h-20 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Bidang Kesehatan Masyarakat</h3>
+              <p className="text-gray-600">
+                Mengelola upaya promotif dan preventif kesehatan masyarakat
+              </p>
+            </div>
+            
+
           </div>
         </div>
       </section>

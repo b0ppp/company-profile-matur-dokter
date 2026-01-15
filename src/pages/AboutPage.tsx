@@ -89,12 +89,12 @@ export default function AboutPage() {
                 <div className="text-4xl font-bold mb-2">20+</div>
                 <div className="text-white/90">Puskesmas</div>
               </div>
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all mt-8">
+              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
                 <Target className="w-12 h-12 mb-4" />
                 <div className="text-4xl font-bold mb-2">30+</div>
                 <div className="text-blue-100">Klinik</div>
               </div>
-              <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all -mt-8">
+              <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
                 <Users className="w-12 h-12 mb-4" />
                 <div className="text-4xl font-bold mb-2">5+</div>
                 <div className="text-green-100">Rumah Sakit</div>
@@ -190,7 +190,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#C41E3A] hover:shadow-xl transition-all text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-[#C41E3A] to-[#E85D75] rounded-full flex items-center justify-center mx-auto mb-6">
                 <User className="w-10 h-10 text-white" />

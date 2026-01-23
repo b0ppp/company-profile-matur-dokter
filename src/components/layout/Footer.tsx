@@ -23,25 +23,25 @@ export function Footer() {
             {/* Social Media */}
             <div className="flex space-x-3">
               <a 
-                href="#"
+                href="https://www.facebook.com/maturdokterklaten"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-[#C41E3A] hover:to-[#E85D75] transition"
               >
                 <Facebook className="w-5 h-5 text-white" />
               </a>
               <a 
-                href="#"
+                href="https://www.instagram.com/maturdokter_kabklaten?igsh=MThkZnYwbTgybGprYg=="
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-[#C41E3A] hover:to-[#E85D75] transition"
               >
                 <Instagram className="w-5 h-5 text-white" />
               </a>
               <a 
-                href="#"
+                href="https://x.com/MaturdokterK"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-[#C41E3A] hover:to-[#E85D75] transition"
               >
                 <Twitter className="w-5 h-5 text-white" />
               </a>
               <a 
-                href="#"
+                href="https://www.youtube.com/@dinaskesehatan2581"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-[#C41E3A] hover:to-[#E85D75] transition"
               >
                 <Youtube className="w-5 h-5 text-white" />

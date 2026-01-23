@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, MapPin, Phone, Clock, Facebook, Instagram, Twitter, Youtube, Send } from 'lucide-react';
+import { Mail, MessageCircle, MapPin, Phone, Clock, Facebook, Instagram, Twitter, Youtube, Send, X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function ContactPage() {
@@ -20,15 +20,15 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Telepon",
-      info: "(0272) 321053",
-      link: "tel:0272321053",
+      info: "(0272) 3391 330",
+      link: "tel:02723391330",
       color: "from-[#C41E3A] to-[#E85D75]"
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      info: "+62 813-3205-1369",
-      link: "https://wa.me/6281332051369",
+      info: "0822 60000 910",
+      link: "https://wa.me/6282260000910",
       color: "from-green-500 to-green-600"
     },
     {
@@ -252,25 +252,25 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Ikuti Media Sosial Kami</h3>
                 <div className="flex space-x-4 mb-6">
                   <a 
-                    href="#"
+                    href="https://www.facebook.com/maturdokterklaten"
                     className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                   >
                     <Facebook className="w-7 h-7 text-white" />
                   </a>
                   <a 
-                    href="#"
+                    href="https://www.instagram.com/maturdokter_kabklaten?igsh=MThkZnYwbTgybGprYg=="
                     className="w-14 h-14 bg-pink-600 rounded-xl flex items-center justify-center hover:bg-pink-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                   >
                     <Instagram className="w-7 h-7 text-white" />
                   </a>
                   <a 
-                    href="#"
+                    href="https://x.com/MaturdokterK"
                     className="w-14 h-14 bg-blue-400 rounded-xl flex items-center justify-center hover:bg-blue-500 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                   >
-                    <Twitter className="w-7 h-7 text-white" />
+                    <X className="w-7 h-7 text-white" />
                   </a>
                   <a 
-                    href="#"
+                    href="https://www.youtube.com/@dinaskesehatan2581"
                     className="w-14 h-14 bg-red-600 rounded-xl flex items-center justify-center hover:bg-red-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                   >
                     <Youtube className="w-7 h-7 text-white" />

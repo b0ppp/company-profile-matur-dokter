@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { PhoneMockup } from '../components/PhoneMockup';
 
 // Import app screenshot - NEW BERANDA
-import imgBeranda from "@/assets/homePage.jpeg";
+// import imgBeranda from "@/assets/homePage.jpeg";
 
 export default function AboutPage() {
   const missions = [
@@ -268,12 +268,33 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <PhoneMockup image={imgBeranda} />
+          {/* --- PERBAIKAN DIMULAI DARI SINI --- */}
+          {/* 1. Kita batasi lebar total menjadi max-w-4xl dan taruh tengah (mx-auto) */}
+          {/* 2. Gunakan flex-col dan gap-8 untuk jarak antar card yang rapi */}
+          <div className="max-w-4xl mx-auto flex flex-col gap-8">
+            
+            {/* Card 1: Video */}
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                Video Pengenalan Aplikasi
+              </h3>
+
+              {/* 3. Gunakan 'aspect-video' agar tinggi otomatis menyesuaikan rasio YouTube (16:9) */}
+              
+              <div className="relative w-full max-w-4xl aspect-video rounded-xl shadow-lg overflow-hidden bg-white border border-gray-200">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/dV4dB9xh4jU"
+                  title="Video Pengenalan Matur Dokter"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>                              
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-8">
+            {/* Card 2: Fitur Utama */}
+            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Fitur Utama</h3>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
@@ -290,14 +311,16 @@ export default function AboutPage() {
                 </li>
               </ul>
               <div className="mt-8">
-                <Link to="/download" className="bg-[#C41E3A] text-white px-4 py-2 rounded-full hover:bg-[#E85D75] transition-all">
+                <Link to="/download" className="bg-[#C41E3A] text-white px-4 py-2 rounded-full hover:bg-[#E85D75] transition-all inline-block">
                   Unduh Aplikasi
                 </Link>
               </div>
             </div>
+
           </div>
         </div>
       </section>
+      
     </div>
   );
 }

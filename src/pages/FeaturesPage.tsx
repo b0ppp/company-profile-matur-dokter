@@ -259,12 +259,11 @@ export default function FeaturesPage() {
             Download aplikasi Matur Dokter sekarang dan nikmati kemudahan akses layanan kesehatan
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-white text-[#C41E3A] px-10 py-5 rounded-xl hover:bg-gray-100 transition-all font-bold text-lg shadow-xl">
-              Download Android
-            </button>
-            <button className="bg-[#1a2742] text-white px-10 py-5 rounded-xl hover:bg-[#0f1924] transition-all font-bold text-lg shadow-xl">
-              Download iOS
-            </button>
+            <a href="https://play.google.com/store/apps/details?id=com.maturdokter">
+              <button className="bg-white text-[#C41E3A] px-10 py-5 rounded-xl hover:bg-gray-100 transition-all font-bold text-lg shadow-xl">
+                Download Android
+              </button>
+            </a>
           </div>
         </div>
       </section>

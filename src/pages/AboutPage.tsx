@@ -279,17 +279,34 @@ export default function AboutPage() {
                 Video Pengenalan Aplikasi
               </h3>
 
-              {/* 3. Gunakan 'aspect-video' agar tinggi otomatis menyesuaikan rasio YouTube (16:9) */}
+              {/* Video Container - Responsive aspect ratio (Mobile: 18:9, Desktop: 20:9) */}
               
-              <div className="relative w-full max-w-4xl aspect-video rounded-xl shadow-lg overflow-hidden bg-white border border-gray-200">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/dV4dB9xh4jU"
-                  title="Video Pengenalan Matur Dokter"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+              {/* Mobile view - 18:9 (lebih pendek dari 16:9) */}
+              <div className="md:hidden flex justify-center">
+                <div className="relative w-full rounded-xl shadow-lg overflow-hidden bg-white border border-gray-200" style={{ aspectRatio: '18 / 9' }}>
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/dV4dB9xh4jU"
+                    title="Video Pengenalan Matur Dokter"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              {/* Desktop view - 20:9 (wider) */}
+              <div className="hidden md:flex justify-center">
+                <div className="relative w-full max-w-5xl rounded-xl shadow-lg overflow-hidden bg-white border border-gray-200" style={{ aspectRatio: '20 / 9' }}>
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/dV4dB9xh4jU"
+                    title="Video Pengenalan Matur Dokter"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>                              
             </div>
 

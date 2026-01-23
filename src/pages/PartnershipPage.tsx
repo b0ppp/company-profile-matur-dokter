@@ -248,10 +248,10 @@ export default function PartnershipPage() {
                 Hubungi Kami
               </a>
               <a 
-                href="tel:0272321234"
+                href="tel:02723391330"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-10 py-5 rounded-xl hover:bg-white hover:text-[#C41E3A] transition-all font-bold text-lg"
               >
-                Telepon (0272) 321234
+                Telepon (0272) 3391 330
               </a>
             </div>
           </div>

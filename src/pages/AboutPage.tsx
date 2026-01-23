@@ -1,6 +1,6 @@
 import { Building2, Target, Eye, CheckCircle2, Award, Heart, Shield, Users, TrendingUp, Smartphone, Download, Home, Pill, Building, UsersRound, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { PhoneMockup } from '../components/PhoneMockup';
+import { PhoneMockup } from '../components/common/PhoneMockup';
 
 // Import app screenshot - NEW BERANDA
 // import imgBeranda from "@/assets/homePage.jpeg";

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navigation } from './components/Navigation';
-import { Footer } from './components/Footer';
+import { Navigation } from './components/layout/Navigation';
+import { Footer } from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import FeaturesPage from './pages/FeaturesPage';

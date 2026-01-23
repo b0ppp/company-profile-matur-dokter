@@ -15,7 +15,7 @@ import {
   Download
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { PhoneMockup } from '../components/PhoneMockup';
+import { PhoneMockup } from '../components/common/PhoneMockup';
 
 // Import app screenshot - NEW BERANDA
 import imgBerita from "@/assets/layananPage.jpeg";

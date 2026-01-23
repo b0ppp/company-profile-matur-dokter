@@ -1,6 +1,6 @@
   import { useState } from 'react';
   import { Smartphone, Download, CheckCircle, Star, Users, Shield, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
-  import { PhoneMockup } from '../components/PhoneMockup';
+  import { PhoneMockup } from '../components/common/PhoneMockup';
   
   // Import app screenshots - ALL BERANDA SCREENS
   import imgBeranda from "@/assets/homePage.jpeg";

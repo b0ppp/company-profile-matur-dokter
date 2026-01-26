@@ -253,23 +253,54 @@ export default function HomePage() {
 
             {/* Right - Phone Mockups */}
             <div className="relative">
-              <div className="flex justify-center space-x-8">
-                <div className="transform -rotate-6 hover:rotate-0 transition-transform duration-300">
+              {/* ===== MOBILE ONLY ===== */}
+              <div className="md:hidden flex justify-center py-24">
+                <div className="relative">
+
+                  {/* Phone */}
+                  <div className="transform -rotate-6 scale-90">
+                    <PhoneMockup image={imgTeleponDarurat} />
+                  </div>
+
+                  {/* Download Badge */}
+                  <div className="absolute -top-4 -left-4 bg-gradient-to-r 
+                                  from-[#C41E3A] to-[#E85D75] text-white px-6 
+                                  py-2 rounded-2xl shadow-xl font-bold">
+                    100K+ Downloads
+                  </div>
+
+                  {/* Rating Badge */}
+                  <div className="absolute -bottom-4 -right-4 bg-gradient-to-r 
+                                  from-green-500 to-green-600 text-white px-6 py-2 
+                                  rounded-2xl shadow-xl font-bold">
+                    ⭐ 4.8 Rating
+                  </div>
+                </div>
+              </div>
+
+              {/* ===== DESKTOP & TABLET ===== */}
+              <div className="hidden md:flex justify-center space-x-1">
+                <div className="transform -rotate-6 hover:rotate-0 transition-transform duration-300 px-5">
                   <PhoneMockup image={imgTeleponDarurat} />
                 </div>
+
                 <div className="transform rotate-6 hover:rotate-0 transition-transform duration-300 mt-12">
                   <PhoneMockup image={imgBeranda} />
                 </div>
-              </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -left-4 bg-gradient-to-r from-[#C41E3A] to-[#E85D75] text-white px-6 py-3 rounded-2xl shadow-xl font-bold">
-                <Smartphone className="w-6 h-6 inline mr-2" />
-                100K+ Downloads
-              </div>
-              
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-2xl shadow-xl font-bold">
-                ⭐ 4.8 Rating
+
+                {/* Floating Elements */}
+                <div className="absolute -top-4 -left-4 bg-gradient-to-r 
+                                from-[#C41E3A] to-[#E85D75] text-white px-6 py-3 
+                                rounded-2xl shadow-xl font-bold">
+                  <Smartphone className="w-6 h-6 inline mr-2" />
+                  100K+ Downloads
+                </div>
+
+                <div className="absolute -bottom-4 -right-4 bg-gradient-to-r 
+                                from-green-500 to-green-600 text-white px-6 py-3 
+                                rounded-2xl shadow-xl font-bold">
+                  ⭐ 4.8 Rating
+                </div>
               </div>
             </div>
           </div>

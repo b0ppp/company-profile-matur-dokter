@@ -54,10 +54,10 @@ npm run build
 src/
 ├── assets/ # Static files (images, logos)
 ├── components/
-│ ├── layout/ # Layout components (Navigation, Footer)
-│ ├── common/ # Reusable components (PhoneMockup)
+│ ├── layout/ # Layout components
+│ ├── common/ # Reusable components
 │ └── ui/ # Shadcn UI components
-├── pages/ # Page components (HomePage, AboutPage, dll)
+├── pages/ # Page components
 ├── hooks/ # Custom React hooks
 ├── utils/ # Utility functions
 ├── constants/ # App constants

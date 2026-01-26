@@ -1,40 +1,96 @@
-# Company Profile Matur Dokter
+# MATUR DOKTER – Company Profile Website
 
-Repository ini berisi **kode sumber website company profile “Matur Dokter”** yang dibangun sebagai proyek UI statis modern menggunakan Vite, TypeScript, dan CSS. Ini bukan backend atau aplikasi full-stack. Fokusnya di tampilan dan konten profil organisasi / layanan dokter.
+Website **company profile** untuk aplikasi **Matur Dokter**, sebuah layanan kesehatan digital yang dikembangkan oleh **Dinas Kesehatan Kabupaten Klaten**.
 
-## 📌 Tentang Proyek
+Website ini berfungsi sebagai media informasi publik untuk menampilkan fitur unggulan, layanan kesehatan, panduan unduh aplikasi, serta kontak dan layanan darurat.
 
-Proyek ini adalah *frontend static site* untuk menampilkan profil perusahaan yang bertema layanan kesehatan / dokter. Struktur, gaya, dan alur navigasi dibangun supaya siap dikembangkan atau di-*deploy* dengan platform hosting statis seperti Vercel, Netlify, GitHub Pages, dsb.
+---
 
-**Fitur utama:**
-- Struktur UI modern menggunakan Vite + TypeScript
-- Halaman HTML + CSS responsif (layout statis)
-- Dapat langsung di-hosting tanpa backend
+## 🔎 Fitur Utama
 
-## 🛠️ Teknologi yang Digunakan
+- Beranda (overview aplikasi)
+- Tentang (visi, misi, video pengenalan)
+- Fitur Layanan
+- Kemitraan
+- Download aplikasi
+- Kontak
+- Emergency Call (119)
 
-Proyek ini menggunakan:
-- ⚡ **Vite** sebagai *build tool* dan *dev server*
-- 🧠 **TypeScript** untuk JavaScript yang lebih aman
-- 💅 **CSS** untuk styling
-- HTML statis di folder `src/`
+---
 
-### 📁 Struktur Folder Singkat
-```
-/
-├── node_modules/ # dependensi
-├── src/ # kode sumber UI
-├── package.json # daftar script & dependensi
-├── package-lock.json
-├── vite.config.ts # konfigurasi Vite
-└── README.md # dokumentasi ini
-```
+## 🪄 Teknologi
+
+- React 18
+- Vite
+- TypeScript
+- Tailwind CSS
+- Shadcn/ui + Radix UI
+- React Router DOM
+- React Hook Form
+- Recharts
+- Lucide React
+
+---
+
 ## 🚀 Cara Menjalankan Proyek
 
-**Instal dependensi dan Run di Local Host:**
-   ```bash
-   npm install
-   npm run dev
-   ```
+### Instalasi
 
+```bash
+git clone <repository-url>
+cd company-profile
+npm install
+npm run dev
+```
+
+### Build Production
+
+```bash
+npm run build
+```
+
+### 📁 Struktur Folder
+```
+src/
+├── assets/ # Static files (images, logos)
+├── components/
+│ ├── layout/ # Layout components (Navigation, Footer)
+│ ├── common/ # Reusable components (PhoneMockup)
+│ └── ui/ # Shadcn UI components
+├── pages/ # Page components (HomePage, AboutPage, dll)
+├── hooks/ # Custom React hooks
+├── utils/ # Utility functions
+├── constants/ # App constants
+├── types/ # TypeScript types
+├── styles/ # Global CSS
+├── App.tsx # Root component
+├── main.tsx # Entry point
+└── index.css # Global styles
+```
+
+---
+
+## 🗝️ Dependencies
+
+- react ^18.3.1
+- react-dom ^18.3.1
+- react-router-dom
+- @radix-ui/react-*
+- tailwindcss
+- lucide-react
+- react-hook-form
+- recharts
+- shadcn/ui
+
+---
+
+## 🗒️ Catatan
+
+Project ini merupakan landing page / company profile, bukan aplikasi layanan medis secara langsung.
+
+---
+
+## ✅ Lisensi
+
+Dikembangkan untuk Dinas Kesehatan Kabupaten Klaten.
 

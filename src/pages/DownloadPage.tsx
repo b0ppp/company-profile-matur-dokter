@@ -55,8 +55,8 @@
       },
       {
         icon: Users,
-        title: "100K+ Pengguna",
-        desc: "Dipercaya oleh lebih dari 100.000 masyarakat Kabupaten Klaten",
+        title: "500+ Pengguna",
+        desc: "Dipercaya oleh lebih dari 500 masyarakat Kabupaten Klaten",
         color: "from-blue-500 to-blue-600"
       },
       {
@@ -123,16 +123,16 @@
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-6">
                   <div>
-                    <div className="text-3xl font-bold mb-1">100K+</div>
+                    <div className="text-3xl font-bold mb-1">500+</div>
                     <div className="text-gray-400 text-sm">Downloads</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold mb-1">4.8</div>
-                    <div className="text-gray-400 text-sm">Rating</div>
+                    <div className="text-3xl font-bold mb-1">34</div>
+                    <div className="text-gray-400 text-sm">Puskesmas</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold mb-1">50+</div>
-                    <div className="text-gray-400 text-sm">Faskes</div>
+                    <div className="text-3xl font-bold mb-1">13</div>
+                    <div className="text-gray-400 text-sm">Rumah Sakit</div>
                   </div>
                 </div>
               </div>

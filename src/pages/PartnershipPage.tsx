@@ -33,10 +33,10 @@ export default function PartnershipPage() {
   ];
 
   const achievements = [
-    { icon: Handshake, number: "50+", label: "Mitra Kesehatan", desc: "Kerjasama strategis" },
-    { icon: Users, number: "100K+", label: "Pengguna Aktif", desc: "Masyarakat terlayani" },
-    { icon: Award, number: "26", label: "Kecamatan", desc: "Cakupan wilayah" },
-    { icon: Globe, number: "100%", label: "Terintegrasi", desc: "Sistem digital" }
+    { icon: Handshake, number: "34", label: "Puskesmas", desc: "Kerjasama strategis" },
+    { icon: Users, number: "13", label: "Rumah Sakit", desc: "Masyarakat terlayani" }
+    // { icon: Award, number: "26", label: "Kecamatan", desc: "Cakupan wilayah" }
+    // { icon: Globe, number: "100%", label: "Terintegrasi", desc: "Sistem digital" }
   ];
 
   const benefits = [
@@ -171,7 +171,7 @@ export default function PartnershipPage() {
           </div>
 
           {/* Achievements */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
             {achievements.map((achievement, index) => {
               const Icon = achievement.icon;
               return (
@@ -241,17 +241,17 @@ export default function PartnershipPage() {
               Bergabunglah dalam membangun ekosistem kesehatan yang lebih baik untuk masyarakat Kabupaten Klaten.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a 
+              {/* <a 
                 href="mailto:dinkes@klatenkab.go.id"
                 className="bg-white text-[#C41E3A] px-10 py-5 rounded-xl hover:bg-gray-100 transition-all font-bold text-lg shadow-xl"
               >
                 Hubungi Kami
-              </a>
+              </a> */}
               <a 
                 href="tel:02723391330"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-10 py-5 rounded-xl hover:bg-white hover:text-[#C41E3A] transition-all font-bold text-lg"
               >
-                Telepon (0272) 3391 330
+                0822 60000 910 (WhatsApp)
               </a>
             </div>
           </div>

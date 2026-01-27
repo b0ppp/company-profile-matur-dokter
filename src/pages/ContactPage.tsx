@@ -20,8 +20,8 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Telepon",
-      info: "(0272) 3391 330",
-      link: "tel:02723391330",
+      info: "0822 60000 910",
+      link: "tel:082260000910",
       color: "from-[#C41E3A] to-[#E85D75]"
     },
     {
@@ -31,13 +31,13 @@ export default function ContactPage() {
       link: "https://wa.me/6282260000910",
       color: "from-green-500 to-green-600"
     },
-    {
-      icon: Mail,
-      title: "Email",
-      info: "dinas.kesehatan@klaten.go.id",
-      link: "mailto:dinas.kesehatan@klaten.go.id",
-      color: "from-blue-500 to-blue-600"
-    },
+    // {
+    //   icon: Mail,
+    //   title: "Email",
+    //   info: "dinas.kesehatan@klaten.go.id",
+    //   link: "mailto:dinas.kesehatan@klaten.go.id",
+    //   color: "from-blue-500 to-blue-600"
+    // },
     {
       icon: MapPin,
       title: "Alamat",
@@ -86,7 +86,7 @@ export default function ContactPage() {
       {/* Contact Cards */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {contactInfo.map((contact, index) => {
               const Icon = contact.icon;
               return (

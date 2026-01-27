@@ -22,11 +22,15 @@ import imgBeranda from "@/assets/homePage.jpeg";
 import imgTeleponDarurat from "@/assets/sosPage.jpeg";
 
 export default function HomePage() {
+  const calls = [
+    {number: "1", label: "Call Center"}
+  ];
+
   const stats = [
-    { number: "20+", label: "Puskesmas" },
-    { number: "5+", label: "Rumah Sakit" },
-    { number: "30+", label: "Klinik Kesehatan" },
-    { number: "100K+", label: "Pengguna Aktif" }
+    // { number: "1", label: "Call Center" },
+    { number: "34", label: "Puskesmas" },
+    { number: "13", label: "Rumah Sakit" }
+    // { number: "100%", label: "Integrasi Sistem Digital" }
   ];
 
   const services = [
@@ -123,16 +127,27 @@ export default function HomePage() {
             </div>
 
             {/* Right Content - Stats Cards */}
-            <div className="grid grid-cols-2 gap-4">
-              {stats.map((stat, index) => (
+            <div className="grid grid-cols-1 gap-4">
+              {calls.map((call, index) => (
                 <div 
                   key={index}
                   className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all hover:scale-105 transform"
                 >
-                  <div className="text-4xl font-bold text-white mb-2">{stat.number}</div>
-                  <div className="text-white/90 font-medium">{stat.label}</div>
+                  <div className="text-4xl font-bold text-white mb-2">{call.number}</div>
+                  <div className="text-white/90 font-medium">{call.label}</div>
                 </div>
               ))}
+              <div className="grid grid-cols-2 gap-4">
+                {stats.map((stat, index) => (
+                  <div 
+                    key={index}
+                    className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all hover:scale-105 transform"
+                  >
+                    <div className="text-4xl font-bold text-white mb-2">{stat.number}</div>
+                    <div className="text-white/90 font-medium">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -266,7 +281,7 @@ export default function HomePage() {
                   <div className="absolute -top-4 -left-4 bg-gradient-to-r 
                                   from-[#C41E3A] to-[#E85D75] text-white px-6 
                                   py-2 rounded-2xl shadow-xl font-bold">
-                    100K+ Downloads
+                    500+ Downloads
                   </div>
 
                   {/* Rating Badge */}
@@ -293,7 +308,7 @@ export default function HomePage() {
                                 from-[#C41E3A] to-[#E85D75] text-white px-6 py-3 
                                 rounded-2xl shadow-xl font-bold">
                   <Smartphone className="w-6 h-6 inline mr-2" />
-                  100K+ Downloads
+                  500+ Downloads
                 </div>
 
                 <div className="absolute -bottom-4 -right-4 bg-gradient-to-r 

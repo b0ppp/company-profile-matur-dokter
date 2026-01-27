@@ -68,12 +68,12 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-[#E85D75] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">(0272) 3391 330</span>
+                <span className="text-gray-400">0822 60000 910</span>
               </li>
-              <li className="flex items-start space-x-3">
+              {/* <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-[#E85D75] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400">dinas.kesehatan@klaten.go.id</span>
-              </li>
+              </li> */}
               <li className="flex items-start space-x-3">
                 <MessageCircle className="w-5 h-5 text-[#E85D75] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400">0822 60000 910</span>

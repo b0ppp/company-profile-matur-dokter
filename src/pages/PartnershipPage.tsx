@@ -1,4 +1,4 @@
-import { Building2, Heart, Phone, Activity, Handshake, Award, Users, Globe, Target, CheckCircle } from 'lucide-react';
+import { Building2, Heart, Phone, Activity, Handshake, Award, Users, Globe, Target, CheckCircle, Building, Hospital } from 'lucide-react';
 
 export default function PartnershipPage() {
   const mainPartners = [
@@ -33,8 +33,8 @@ export default function PartnershipPage() {
   ];
 
   const achievements = [
-    { icon: Handshake, number: "34", label: "Puskesmas", desc: "Kerjasama strategis" },
-    { icon: Users, number: "13", label: "Rumah Sakit", desc: "Masyarakat terlayani" }
+    { icon: Building, number: "34", label: "Puskesmas", desc: "Kerjasama strategis" },
+    { icon: Hospital, number: "13", label: "Rumah Sakit", desc: "Masyarakat terlayani" }
     // { icon: Award, number: "26", label: "Kecamatan", desc: "Cakupan wilayah" }
     // { icon: Globe, number: "100%", label: "Terintegrasi", desc: "Sistem digital" }
   ];
@@ -248,7 +248,7 @@ export default function PartnershipPage() {
                 Hubungi Kami
               </a> */}
               <a 
-                href="tel:02723391330"
+                href="tel:082260000910"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-10 py-5 rounded-xl hover:bg-white hover:text-[#C41E3A] transition-all font-bold text-lg"
               >
                 0822 60000 910 (WhatsApp)

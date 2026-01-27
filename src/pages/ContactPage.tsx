@@ -214,17 +214,17 @@ export default function ContactPage() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold mb-4">Jam Operasional</h3>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center pb-3 border-b border-white/10">
+                      {/* <div className="flex justify-between items-center pb-3 border-b border-white/10">
                         <span className="text-white/80">Senin - Kamis:</span>
                         <span className="font-bold">08.00 - 14.00 WIB</span>
                       </div>
                       <div className="flex justify-between items-center pb-3 border-b border-white/10">
                         <span className="text-white/80">Jumat:</span>
                         <span className="font-bold">08.00 - 11.00 WIB</span>
-                      </div>
+                      </div> */}
                       <div className="flex justify-between items-center pt-3">
-                        <span className="text-white/80">Layanan Darurat:</span>
-                        <span className="font-bold bg-gradient-to-r from-[#C41E3A] to-[#E85D75] px-4 py-2 rounded-lg">24/7</span>
+                        <span className="text-white/80">PSC 119 Matur Dokter :</span>
+                        <span className="font-bold bg-gradient-to-r from-[#C41E3A] to-[#E85D75] px-4 py-2 rounded-lg">24 Jam</span>
                       </div>
                     </div>
                   </div>

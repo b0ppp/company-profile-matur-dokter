@@ -1,4 +1,4 @@
-import { Building2, Target, Eye, CheckCircle2, Award, Heart, Shield, Users, TrendingUp, Smartphone, Download, Home, Pill, Building, UsersRound, User } from 'lucide-react';
+import { Building2, Target, Eye, CheckCircle2, Award, Heart, Shield, Users, TrendingUp, Smartphone, Download, Home, Pill, Building, UsersRound, User, Hospital } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PhoneMockup } from '../components/common/PhoneMockup';
 
@@ -83,27 +83,27 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6">
               <div className="bg-gradient-to-br from-[#C41E3A] to-[#E85D75] rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
-                <Building2 className="w-12 h-12 mb-4" />
-                <div className="text-4xl font-bold mb-2">20+</div>
+                <Building className="w-12 h-12 mb-4" />
+                <div className="text-4xl font-bold mb-2">34</div>
                 <div className="text-white/90">Puskesmas</div>
               </div>
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
+              <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
+                <Hospital className="w-12 h-12 mb-4" />
+                <div className="text-4xl font-bold mb-2">13</div>
+                <div className="text-green-100">Rumah Sakit</div>
+              </div>
+              {/* <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
                 <Target className="w-12 h-12 mb-4" />
                 <div className="text-4xl font-bold mb-2">30+</div>
                 <div className="text-blue-100">Klinik</div>
-              </div>
-              <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
-                <Users className="w-12 h-12 mb-4" />
-                <div className="text-4xl font-bold mb-2">5+</div>
-                <div className="text-green-100">Rumah Sakit</div>
-              </div>
-              <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
+              </div> */}
+              {/* <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white transform hover:scale-105 transition-all">
                 <Heart className="w-12 h-12 mb-4" />
                 <div className="text-4xl font-bold mb-2">100K+</div>
                 <div className="text-purple-100">Pengguna</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

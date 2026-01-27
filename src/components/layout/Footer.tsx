@@ -1,5 +1,6 @@
 import { Mail, MessageCircle, MapPin, Phone, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logoImage from '@/assets/icon_matur_dokter.png';
 
 export function Footer() {
   return (
@@ -9,9 +10,11 @@ export function Footer() {
           {/* About Section */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#C41E3A] to-[#E85D75] rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white text-xl font-bold">MD</span>
-              </div>
+              <img 
+              src={logoImage} 
+              alt="Logo Matur Dokter" 
+              className="w-12 h-12 rounded-xl object-contain shadow-md" 
+              />
               <div>
                 <h3 className="font-bold text-lg text-white">Matur Dokter</h3>
                 <p className="text-sm text-gray-400">Dinkes Kab. Klaten</p>

@@ -42,7 +42,7 @@ export default function ContactPage() {
       icon: MapPin,
       title: "Alamat",
       info: "Jl. Pemuda Nomor No.313, Klaten, Jawa Tengah 57412",
-      link: null,
+      link: "https://www.google.com/maps/place/Kantor+Dinas+Kesehatan+Kab.+Klaten/@-7.7139131,110.5918125,20.72z/data=!4m6!3m5!1s0x2e7a4409ac90a0e1:0xc0d28ab61f24fe49!8m2!3d-7.7138959!4d110.5917606!16s%2Fg%2F1pztfdls1?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D",
       color: "from-purple-500 to-purple-600"
     }
   ];

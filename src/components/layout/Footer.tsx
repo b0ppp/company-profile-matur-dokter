@@ -59,6 +59,7 @@ export function Footer() {
               <li><Link to="/" className="text-gray-400 hover:text-[#E85D75] transition">Beranda</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-[#E85D75] transition">Tentang Kami</Link></li>
               <li><Link to="/features" className="text-gray-400 hover:text-[#E85D75] transition">Fitur Layanan</Link></li>
+              <li><Link to="/consultation" className="text-gray-400 hover:text-[#E85D75] transition">Konsultasi</Link></li>
               <li><Link to="/partnership" className="text-gray-400 hover:text-[#E85D75] transition">Kemitraan</Link></li>
               <li><Link to="/download" className="text-gray-400 hover:text-[#E85D75] transition">Download App</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-[#E85D75] transition">Kontak</Link></li>

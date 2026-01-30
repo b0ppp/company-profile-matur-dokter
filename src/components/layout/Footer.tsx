@@ -96,10 +96,10 @@ export function Footer() {
               <p className="text-sm text-white/90 mb-4">Hubungi segera</p>
               <a 
                 href="tel:119"
-                className="flex items-center justify-center space-x-2 bg-white text-[#C41E3A] px-6 py-3 rounded-lg hover:bg-gray-100 transition font-bold text-xl shadow-md"
+                className="flex items-center justify-center space-x-2 bg-white text-[#C41E3A] px-6 py-3 rounded-lg hover:bg-gray-100 transition font-bold text-l shadow-md"
               >
                 <Phone className="w-5 h-5" />
-                <span>119</span>
+                <span>Telp. Darurat</span>
               </a>
             </div>
           </div>

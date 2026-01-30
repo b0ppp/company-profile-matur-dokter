@@ -69,7 +69,6 @@
   
     const appFeatures = [
       "SOS Darurat 24/7",
-      "Emergency Call 119",
       "Info Rumah Sakit & Puskesmas",
       "Lokasi Apotek Terdekat",
       "Stok Darah PMI Real-time",

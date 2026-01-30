@@ -21,6 +21,17 @@ import { PhoneMockup } from '../components/common/PhoneMockup';
 import imgBerita from "@/assets/layananPage.jpeg";
 
 export default function FeaturesPage() {
+  const konsultasiMedis =[
+    {
+      icon: MessageSquare,
+      title: "Konsultasi Medis",
+      description: "Layanan konsultasi kesehatan daring bersama dokter dan tenaga medis berkompeten. Diskusikan keluhan kesehatan Anda, dapatkan arahan medis yang jelas, cepat, dan terpercaya tanpa harus datang langsung ke fasilitas kesehatan.",
+      color: "from-orange-500 to-orange-600",
+      bgColor: "from-orange-50 to-white",
+      highlight: true
+    }
+  ]
+
   const mainFeatures = [
     {
       icon: AlertCircle,
@@ -133,9 +144,27 @@ export default function FeaturesPage() {
               Respons cepat untuk keadaan darurat medis
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-10">
             {mainFeatures.filter(f => f.highlight).map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <div 
+                  key={index}
+                  className="bg-gradient-to-br from-[#C41E3A] to-[#E85D75] rounded-3xl p-10 text-white shadow-2xl hover:shadow-3xl transition-all transform hover:-translate-y-2"
+                >
+                  <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
+                    <Icon className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
+                  <p className="text-white/90 text-lg leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+          <div className="grid md:grid-cols-1 gap-8 max-w-5xl mx-auto mb-20">
+            {konsultasiMedis.filter(f => f.highlight).map((feature, index) => {
               const Icon = feature.icon;
               return (
                 <div 
@@ -157,7 +186,7 @@ export default function FeaturesPage() {
           {/* All Features Grid */}
           <div className="text-center mb-12">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Fitur Lengkap Lainnya
+              Fitur Lengkap
             </h3>
             <p className="text-lg text-gray-600">
               Informasi fasilitas kesehatan di seluruh Kabupaten Klaten

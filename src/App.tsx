@@ -8,6 +8,7 @@ import FeaturesPage from './pages/FeaturesPage';
 import PartnershipPage from './pages/PartnershipPage';
 import ContactPage from './pages/ContactPage';
 import DownloadPage from './pages/DownloadPage';
+import ConsultationPage from './pages/ConsultationPage';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
               <Route path="/partnership" element={<PartnershipPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/download" element={<DownloadPage />} />
+              <Route path="/consultation" element={<ConsultationPage />} />
             </Routes>
           </main>
           <Footer />

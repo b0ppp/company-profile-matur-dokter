@@ -14,6 +14,7 @@ export function Navigation() {
     { path: '/', label: 'Beranda' },
     { path: '/about', label: 'Tentang' },
     { path: '/features', label: 'Fitur Layanan' },
+    { path: '/consultation', label: 'Konsultasi' },
     { path: '/partnership', label: 'Kemitraan' },
     { path: '/download', label: 'Download' },
     { path: '/contact', label: 'Kontak' }
@@ -43,7 +44,7 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-0">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -65,7 +66,7 @@ export function Navigation() {
             className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-[#C41E3A] to-[#E85D75] text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all font-semibold"
           >
             <Phone className="w-4 h-4" />
-            <span>Darurat 119</span>
+            <span>Telp. Darurat</span>
           </a>
 
           {/* Mobile menu button */}

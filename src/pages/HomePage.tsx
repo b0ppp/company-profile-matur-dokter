@@ -40,8 +40,8 @@ export default function HomePage() {
     },
     {
       icon: Phone,
-      title: "Call 119",
-      desc: "Emergency medis nasional",
+      title: "Telepon Darurat",
+      desc: "Emergency medis Matur Dokter",
       color: "from-orange-500 to-orange-600",
     },
     {

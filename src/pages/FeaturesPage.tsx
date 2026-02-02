@@ -43,8 +43,8 @@ export default function FeaturesPage() {
     },
     {
       icon: Phone,
-      title: "Emergency Call 119",
-      description: "Panggilan langsung ke nomor darurat kesehatan nasional 24/7. Respons cepat untuk kondisi medis yang membutuhkan penanganan segera.",
+      title: "Telepon Darurat",
+      description: "Panggilan langsung ke nomor darurat Matur Dokter 24/7. Respons cepat untuk kondisi medis yang membutuhkan penanganan segera.",
       color: "from-orange-500 to-orange-600",
       bgColor: "from-orange-50 to-white",
       highlight: true
@@ -90,14 +90,14 @@ export default function FeaturesPage() {
       description: "Tips kesehatan, artikel medis terpercaya, info penyakit, panduan pencegahan dari tenaga medis profesional.",
       color: "from-indigo-500 to-indigo-600",
       bgColor: "from-indigo-50 to-white"
-    },
-    {
-      icon: MessageSquare,
-      title: "Konsultasi Medis",
-      description: "Layanan konsultasi online dengan dokter dan tenaga kesehatan profesional. Tanya jawab seputar keluhan kesehatan.",
-      color: "from-pink-500 to-pink-600",
-      bgColor: "from-pink-50 to-white"
     }
+    // {
+    //   icon: MessageSquare,
+    //   title: "Konsultasi Medis",
+    //   description: "Layanan konsultasi online dengan dokter dan tenaga kesehatan profesional. Tanya jawab seputar keluhan kesehatan.",
+    //   color: "from-pink-500 to-pink-600",
+    //   bgColor: "from-pink-50 to-white"
+    // }
   ];
 
   const additionalFeatures = [
@@ -186,7 +186,7 @@ export default function FeaturesPage() {
           {/* All Features Grid */}
           <div className="text-center mb-12">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Fitur Lengkap
+              Fitur Lainnya
             </h3>
             <p className="text-lg text-gray-600">
               Informasi fasilitas kesehatan di seluruh Kabupaten Klaten

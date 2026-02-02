@@ -465,11 +465,11 @@ export default function ConsultationPage() {
             tenaga medis profesional  
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://play.google.com/store/apps/details?id=com.maturdokter">
+            <Link to="/download">
               <button className="bg-white text-[#C41E3A] px-10 py-5 rounded-xl hover:bg-gray-100 transition-all font-bold text-lg shadow-xl">
                 Download Android
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -159,7 +159,7 @@ export default function PartnershipPage() {
             
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all group text-center transform hover:-translate-y-2">
               <Phone className="w-16 h-16 text-orange-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="font-bold text-gray-900 mb-2">Call 119</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Telepon Darurat</h3>
               <p className="text-sm text-gray-600">Emergency Services</p>
             </div>
             

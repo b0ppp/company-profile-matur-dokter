@@ -291,14 +291,14 @@ export default function ContactPage() {
           <Phone className="w-20 h-20 mx-auto mb-6" />
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Darurat Medis?</h2>
           <p className="text-xl mb-10 max-w-2xl mx-auto">
-            Jangan ragu untuk segera menghubungi layanan darurat kesehatan. Tim kami siap membantu 24/7.
+            Jangan ragu untuk segera menghubungi layanan darurat kesehatan. Matur Dokter siap membantu 24/7.
           </p>
           <a 
             href="tel:119"
             className="inline-flex items-center space-x-3 bg-white text-[#C41E3A] px-12 py-6 rounded-xl hover:bg-gray-100 transition-all font-bold text-2xl shadow-2xl transform hover:-translate-y-1"
           >
             <Phone className="w-8 h-8" />
-            <span>Hubungi 119</span>
+            <span>Telepon Darurat</span>
           </a>
         </div>
       </section>

@@ -83,23 +83,23 @@ export default function ConsultationPage() {
     {
       question: "Berapa biaya konsultasi?",
       answer:
-        "Biaya konsultasi bervariasi tergantung jenis konsultasi dan tenaga medis yang dipilih. Lihat detail harga di aplikasi Matur Dokter.",
+        "Konsultasi di aplikasi Matur Dokter tidak dikenakan biaya.",
     },
     {
       question: "Apakah konsultasi aman dan privat?",
       answer:
         "Ya, semua konsultasi dijamin aman dan privat. Data pribadi Anda dilindungi dengan enkripsi tingkat enterprise.",
-    },
-    {
-      question: "Apakah hasil konsultasi dapat digunakan untuk klaim asuransi?",
-      answer:
-        "Ya, hasil konsultasi dapat digunakan untuk klaim asuransi kesehatan. Kami akan memberikan surat keterangan medis yang resmi.",
-    },
-    {
-      question: "Berapa lama waktu tunggu konsultasi?",
-      answer:
-        "Waktu tunggu tergantung ketersediaan tenaga medis. Biasanya dapat dimulai dalam 15-30 menit setelah pemesanan.",
-    },
+    }
+    // {
+    //   question: "Apakah hasil konsultasi dapat digunakan untuk klaim asuransi?",
+    //   answer:
+    //     "Ya, hasil konsultasi dapat digunakan untuk klaim asuransi kesehatan. Kami akan memberikan surat keterangan medis yang resmi.",
+    // },
+    // {
+    //   question: "Berapa lama waktu tunggu konsultasi?",
+    //   answer:
+    //     "Waktu tunggu tergantung ketersediaan tenaga medis. Biasanya dapat dimulai dalam 15-30 menit setelah pemesanan.",
+    // },
   ];
 
   const appScreens = [

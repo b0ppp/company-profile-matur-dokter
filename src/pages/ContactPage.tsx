@@ -50,7 +50,7 @@ export default function ContactPage() {
   const faqItems = [
     {
       question: "Bagaimana cara menggunakan aplikasi Matur Dokter?",
-      answer: "Download aplikasi dari Play Store atau App Store, lakukan registrasi dengan data diri yang valid, dan Anda bisa langsung mengakses semua fitur layanan kesehatan."
+      answer: "Download aplikasi dari Play Store, lakukan registrasi dengan data diri yang valid, dan Anda bisa langsung mengakses semua fitur layanan kesehatan."
     },
     {
       question: "Apakah aplikasi ini gratis?",
@@ -58,7 +58,7 @@ export default function ContactPage() {
     },
     {
       question: "Bagaimana cara menghubungi layanan darurat?",
-      answer: "Anda dapat menggunakan tombol SOS Darurat di aplikasi atau langsung menghubungi nomor 119 untuk layanan emergency call 24 jam."
+      answer: "Anda dapat menggunakan tombol SOS Darurat di aplikasi atau langsung menghubungi nomor darurat yang terhubung langsung dengan Matur Dokter 24 jam."
     },
     {
       question: "Apakah data pribadi saya aman?",

@@ -26,6 +26,7 @@ import imgHomecare from "@/assets/homecare.jpeg";
 
 export default function ConsultationPage() {
   const [activeScreen, setActiveScreen] = useState(0);
+  const [activeShowcase, setActiveShowcase] = useState(0);
 
   const consultationTypes = [
     {
@@ -105,12 +106,43 @@ export default function ConsultationPage() {
     {
       image: imgDaftarDokter,
       title: "Daftar Dokter",
-      description: "Sebagian dari dokter yang terdaftar di Matur Dokter."
+      description: "60+ dokter profesional bersertifikat siap membantu Anda."
     },
     {
       image: imgKonsulDokter,
       title: "Konsultasi Dokter",
-      description: "Menu chat untuk konsultasi keluhan."
+      description: "Chat langsung dengan dokter pilihan Anda."
+    }
+  ];
+
+  const featureShowcases = [
+    {
+      image: imgKonsulMedis,
+      title: "Konsultasi Medis Online",
+      subtitle: "#Dokter Online",
+      description: "Terhubung langsung dengan dokter spesialis yang tersedia tanpa perlu meninggalkan rumah. Fitur pencarian memudahkan Anda menemukan dokter yang sesuai dengan kebutuhan kesehatan Anda.",
+      features: [
+        "Akses daftar dokter profesional bersertifikat",
+        "Status ketersediaan real-time dengan indikator online",
+        "Pencarian dokter berdasarkan spesialisasi",
+        "Profile lengkap tenaga medis"
+      ],
+      color: "from-red-500 to-red-600",
+      highlight: "Respons cepat, privasi terjamin"
+    },
+    {
+      image: imgHomecare,
+      title: "Layanan Homecare",
+      subtitle: "Informasi Kesehatan",
+      description: "Tidak perlu keluar rumah untuk mendapatkan informasi kesehatan yang Anda butuhkan. Tim medis profesional siap memberikan edukasi kesehatan dan konsultasi langsung di rumah Anda.",
+      features: [
+        "Informasi kesehatan komprehensif dari ahli medis",
+        "Edukasi tentang vaksinasi dan tindakan preventif",
+        "Konsultasi ibu hamil dan posyandu",
+        "Layanan kesehatan tanpa perlu keluar rumah"
+      ],
+      color: "from-blue-500 to-blue-600",
+      highlight: "Layanan home-based, informasi terakurat"
     }
   ];
 
@@ -143,58 +175,212 @@ export default function ConsultationPage() {
         </div>
       </section>
 
+      {/* Feature Showcase Section - Konsultasi Medis & Homecare */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="inline-block bg-[#C41E3A]/10 text-[#C41E3A] px-4 py-2 rounded-full mb-6">
+              <span className="font-bold text-sm">FITUR UNGGULAN</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Layanan Terintegrasi
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Akses berbagai layanan kesehatan digital dalam satu aplikasi yang mudah digunakan
+            </p>
+          </div>
+
+          {/* Showcase Grid */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            {/* Left - Feature Info */}
+            <div>
+              <div className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-[#C41E3A]/20 to-[#E85D75]/20 rounded-full">
+                <span className="text-[#C41E3A] font-bold text-sm">{featureShowcases[activeShowcase].subtitle}</span>
+              </div>
+              
+              <h3 className="text-4xl font-bold text-gray-900 mb-4">
+                {featureShowcases[activeShowcase].title}
+              </h3>
+              
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                {featureShowcases[activeShowcase].description}
+              </p>
+
+              {/* Features List */}
+              <div className="space-y-4 mb-10">
+                {featureShowcases[activeShowcase].features.map((feature, idx) => (
+                  <div key={idx} className="flex items-start space-x-4">
+                    <div className={`w-6 h-6 rounded-full bg-gradient-to-r ${featureShowcases[activeShowcase].color} flex items-center justify-center flex-shrink-0 mt-1`}>
+                      <CheckCircle2 className="w-4 h-4 text-white" />
+                    </div>
+                    <p className="text-gray-700 font-medium">{feature}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Highlight Box */}
+              <div className={`bg-gradient-to-r ${featureShowcases[activeShowcase].color} rounded-2xl p-6 text-white mb-8`}>
+                <div className="flex items-center space-x-3">
+                  <AlertCircle className="w-6 h-6 flex-shrink-0" />
+                  <p className="font-bold">{featureShowcases[activeShowcase].highlight}</p>
+                </div>
+              </div>
+
+              {/* Toggle Buttons */}
+              <div className="flex gap-4">
+                {featureShowcases.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveShowcase(idx)}
+                    className={`px-6 py-3 rounded-lg font-bold transition-all ${
+                      idx === activeShowcase
+                        ? 'bg-gradient-to-r from-[#C41E3A] to-[#E85D75] text-white shadow-lg'
+                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    }`}
+                  >
+                    {featureShowcases[idx].title.split(" ")[0]}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Right - Phone Mockup */}
+            <div className="flex justify-center">
+              <PhoneMockup image={featureShowcases[activeShowcase].image} className="animate-float" />
+            </div>
+          </div>
+
+          {/* Feature Cards Grid */}
+          <div className="mt-20 pt-20 border-t border-gray-200">
+            <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              Keunggulan Masing-Masing Layanan
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Konsultasi Medis Card */}
+              <div className="group bg-gradient-to-br from-red-50 to-white rounded-3xl p-8 border-2 border-red-200 hover:border-red-400 shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-center justify-between mb-6">
+                  <h4 className="text-2xl font-bold text-gray-900">Konsultasi Medis Online</h4>
+                  <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center">
+                    <MessageSquare className="w-7 h-7 text-white" />
+                  </div>
+                </div>
+                
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
+                    <span className="text-gray-700">Antarmuka intuitif dengan daftar dokter lengkap</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
+                    <span className="text-gray-700">Status ketersediaan real-time dokter</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
+                    <span className="text-gray-700">Pencarian spesialisasi dokter yang dibutuhkan</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
+                    <span className="text-gray-700">Komunikasi langsung via chat konsultasi</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
+                    <span className="text-gray-700">Respon cepat dari tenaga medis profesional</span>
+                  </div>
+                </div>
+
+                <p className="text-sm text-gray-600 bg-red-100/50 rounded-lg p-4 border-l-4 border-red-500">
+                  <span className="font-bold text-red-700">Solusi Ideal Untuk:</span> Konsultasi keluhan kesehatan umum, second opinion, atau resep tindak lanjut tanpa harus berkunjung ke klinik.
+                </p>
+              </div>
+
+              {/* Homecare Card */}
+              <div className="group bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 border-2 border-blue-200 hover:border-blue-400 shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-center justify-between mb-6">
+                  <h4 className="text-2xl font-bold text-gray-900">Homecare & Informasi</h4>
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+                    <FileText className="w-7 h-7 text-white" />
+                  </div>
+                </div>
+                
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" />
+                    <span className="text-gray-700">Edukasi kesehatan dari ahli medis bersertifikat</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" />
+                    <span className="text-gray-700">Informasi vaksinasi dan tindakan preventif</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" />
+                    <span className="text-gray-700">Layanan konsultasi ibu hamil dan posyandu</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" />
+                    <span className="text-gray-700">Tidak perlu keluar rumah untuk konsultasi</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" />
+                    <span className="text-gray-700">Layanan home-based dengan tim profesional</span>
+                  </div>
+                </div>
+
+                <p className="text-sm text-gray-600 bg-blue-100/50 rounded-lg p-4 border-l-4 border-blue-500">
+                  <span className="font-bold text-blue-700">Solusi Ideal Untuk:</span> Edukasi kesehatan keluarga, konsultasi preventif, atau layanan kesehatan dasar tanpa perlu ke puskesmas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/*Section Dokter */}
       <section className="bg-gradient-to-br from-gray-50 to-white py-20 lg:py-28 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start lg:items-center">
             {/* Left Content */}
-            <div>
+            <div className="py-8 lg:py-12">
               <div className="inline-block bg-[#C41E3A]/10 text-[#C41E3A] px-4 py-2 rounded-full mb-6">
-                <span className="font-bold text-sm">Fitur Konsultasi</span>
+                <span className="font-bold text-sm">JARINGAN DOKTER PROFESIONAL</span>
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Konsultasi Dokter
+                60+ Dokter Siap Membantu
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Download aplikasi Matur Dokter untuk akses cepat ke seluruh
-                layanan kesehatan di Kabupaten Klaten. Interface yang modern dan
-                mudah digunakan untuk semua kalangan.
+                Kami bangga memiliki lebih dari 60 dokter berpengalaman dan bersertifikat profesional yang siap memberikan layanan kesehatan 
+                terbaik untuk masyarakat Kabupaten Klaten. Setiap dokter telah melalui proses verifikasi ketat untuk memastikan kualitas dan kredibilitas layanan.
               </p>
 
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-md">
-                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-white" />
+              <div className="space-y-6 mb-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-[#C41E3A] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Users className="w-4 h-4 text-white" />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900">Akses Cepat</h4>
-                    <p className="text-gray-600 text-sm">
-                      SOS Darurat dalam 1 sentuhan
-                    </p>
+                  <div className="pt-0.5">
+                    <h4 className="font-bold text-gray-900 text-lg">Dokter Berpengalaman</h4>
+                    <p className="text-gray-600 text-base">60+ dokter profesional bersertifikat</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-md">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-white" />
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-[#C41E3A] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle className="w-4 h-4 text-white" />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900">Navigasi GPS</h4>
-                    <p className="text-gray-600 text-sm">
-                      Temukan faskes terdekat
-                    </p>
+                  <div className="pt-0.5">
+                    <h4 className="font-bold text-gray-900 text-lg">Berbagai Spesialisasi</h4>
+                    <p className="text-gray-600 text-base">Dokter umum, spesialis, dan tenaga kesehatan</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-md">
-                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-white" />
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-[#C41E3A] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Clock className="w-4 h-4 text-white" />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900">24/7 Siaga</h4>
-                    <p className="text-gray-600 text-sm">
-                      Layanan darurat nonstop
-                    </p>
+                  <div className="pt-0.5">
+                    <h4 className="font-bold text-gray-900 text-lg">Siap Melayani 24/7</h4>
+                    <p className="text-gray-600 text-base">Konsultasi kapan saja sesuai kebutuhan Anda</p>
                   </div>
                 </div>
               </div>

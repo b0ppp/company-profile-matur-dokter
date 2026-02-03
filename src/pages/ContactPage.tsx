@@ -89,27 +89,32 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {contactInfo.map((contact, index) => {
               const Icon = contact.icon;
-              return (
-                <div 
-                  key={index}
-                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-gray-100 hover:border-[#C41E3A] group text-center transform hover:-translate-y-2"
-                >
+              const content = (
+                <>
                   <div className={`w-16 h-16 bg-gradient-to-r ${contact.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <div className="text-sm text-gray-500 mb-2 font-semibold">{contact.title}</div>
-                  {contact.link ? (
-                    <a 
-                      href={contact.link}
-                      className="font-bold text-gray-900 hover:text-[#C41E3A] transition block"
-                    >
-                      {contact.info}
-                    </a>
-                  ) : (
-                    <div className="font-bold text-gray-900">
-                      {contact.info}
-                    </div>
-                  )}
+                  <div className="font-bold text-gray-900 group-hover:text-[#C41E3A] transition">
+                    {contact.info}
+                  </div>
+                </>
+              );
+
+              return contact.link ? (
+                <a 
+                  key={index}
+                  href={contact.link}
+                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-gray-100 hover:border-[#C41E3A] group text-center transform hover:-translate-y-2 block"
+                >
+                  {content}
+                </a>
+              ) : (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-gray-100 hover:border-[#C41E3A] group text-center transform hover:-translate-y-2"
+                >
+                  {content}
                 </div>
               );
             })}

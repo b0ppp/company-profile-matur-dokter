@@ -17,7 +17,7 @@ export default function PartnershipPage() {
       benefits: ["Stok Darah", "Donor Darah", "Tanggap Darurat"]
     },
     {
-      name: "Emergency Call 119",
+      name: "Telepon Darurat",
       description: "Integrasi dengan layanan panggilan darurat kesehatan nasional untuk respons cepat kondisi medis mendesak",
       icon: Phone,
       color: "from-orange-500 to-orange-600",

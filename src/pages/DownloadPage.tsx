@@ -293,7 +293,7 @@
             </div>
   
             <p className="text-white/80 text-sm">
-              Versi 2.1.0 • Terakhir diupdate: Januari 2026
+              Versi 1.0.8 • Terakhir diperbarui: Desember 2024
             </p>
           </div>
         </section>

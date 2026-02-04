@@ -102,7 +102,7 @@ export function Navigation() {
               className="flex items-center justify-center space-x-2 w-full bg-gradient-to-r from-[#C41E3A] to-[#E85D75] text-white px-4 py-3 rounded-lg font-semibold"
             >
               <Phone className="w-4 h-4" />
-              <span>Darurat 119</span>
+              <span>Telepon Darurat</span>
             </a>
           </div>
         </div>

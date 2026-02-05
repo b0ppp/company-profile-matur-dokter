@@ -8,10 +8,6 @@ src/
 │   ├── common/          # Reusable components (PhoneMockup)
 │   └── ui/              # Shadcn/ui components
 ├── pages/               # Page components (HomePage, AboutPage, etc.)
-├── hooks/               # Custom React hooks
-├── utils/               # Utility functions and helpers
-├── constants/           # App constants and data
-├── types/               # TypeScript types and interfaces
 ├── styles/              # Global CSS
 ├── vite-env.d.ts        # TypeScript declarations for Vite
 ├── main.tsx             # App entry point
@@ -41,18 +37,6 @@ Page components for different routes:
 - `DownloadPage.tsx`
 - `PartnershipPage.tsx`
 - `ContactPage.tsx`
-
-### `/hooks`
-Custom React hooks for reusable logic
-
-### `/utils`
-Utility functions and helpers
-
-### `/constants`
-Application constants and static data
-
-### `/types`
-TypeScript type definitions and interfaces
 
 ### `/assets`
 Static assets (images, icons, etc.)

@@ -1,5 +1,64 @@
 # MATUR DOKTER – Company Profile Website
 
+Website **Company Profile MATUR DOKTER** adalah aplikasi web berbasis React yang berfungsi sebagai halaman informasi resmi untuk layanan kesehatan digital *Matur Dokter*.  
+Website ini menyajikan informasi fitur layanan, kemitraan, panduan penggunaan, serta akses kontak dan layanan darurat.
+
+Proyek ini bersifat **informasional**, bukan aplikasi medis langsung.
+
+---
+
+## ✨ Fitur & Halaman
+
+Website ini terdiri dari beberapa halaman utama:
+
+- **Home**  
+  Halaman utama berisi gambaran umum aplikasi dan layanan Matur Dokter.
+
+- **About**  
+  Informasi mengenai latar belakang, tujuan, dan konsep layanan.
+
+- **Features**  
+  Menjelaskan fitur-fitur utama seperti:
+  - Konsultasi Medis
+  - Konsultasi Dokter
+  - Homecare
+  - Layanan SOS
+
+- **Consultation**  
+  Penjelasan alur dan jenis layanan konsultasi yang tersedia.
+
+- **Partnership**  
+  Informasi kemitraan dengan institusi kesehatan atau pihak terkait.
+
+- **Download**  
+  Panduan dan ajakan untuk mengunduh aplikasi Matur Dokter.
+
+- **Contact**  
+  Informasi kontak dan akses layanan darurat (119).
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+Proyek ini dibangun menggunakan:
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+
+---
+
+## 📁 Struktur Folder
+
+Struktur proyek utama adalah sebagai berikut:
+
+
+
+
+# MATUR DOKTER – Company Profile Website
+
 Website **company profile** untuk aplikasi **Matur Dokter**, sebuah layanan kesehatan digital yang dikembangkan oleh **Dinas Kesehatan Kabupaten Klaten**.
 
 Website ini berfungsi sebagai media informasi publik untuk menampilkan fitur unggulan, layanan kesehatan, panduan unduh aplikasi, serta kontak dan layanan darurat.
